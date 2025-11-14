@@ -1,0 +1,18 @@
+body {
+  background-color: #0d0d0d;
+  color: #e6edf3;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.navbar {
+  background: linear-gradient(135deg, #1a1a1a, #0d1117);
+}
+
+.nav-link {
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #0dcaf0;
+}

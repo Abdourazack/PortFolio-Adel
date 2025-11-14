@@ -1,0 +1,52 @@
+/* Neon title */
+.neon-text {
+  color: #0dcaf0;
+  text-shadow:
+    0 0 5px #0dcaf0,
+    0 0 10px #0dcaf0,
+    0 0 20px #0dcaf0,
+    0 0 40px #0dcaf0;
+}
+
+/* Header container with gradient background */
+.neon-shadow {
+  background: linear-gradient(135deg, #0a0f2d, #141b33);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 0 30px rgba(13, 202, 240, 0.5);
+}
+
+/* General paragraph style */
+p {
+  font-family: 'Roboto Mono', monospace;
+  color: #cbd5e1;
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+/* Paragraph inside neon-text */
+.neon-text p {
+  color: #d1d5db;
+}
+
+/* Secondary text override */
+.text-secondary {
+  color: whitesmoke !important;
+}
+
+/* Contact info styling */
+.contact-info {
+  font-size: 1.1rem;
+  margin-top: 15px;
+}
+
+.contact-link {
+  color: #0dcaf0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    text-decoration: underline;
+    color: #0bbcd8;
+  }
+}
