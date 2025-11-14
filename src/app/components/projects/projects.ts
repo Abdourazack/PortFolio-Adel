@@ -22,7 +22,7 @@ export class Projects {
       title: 'Portfolio Personnel',
       description: 'Mon site pour présenter mes projets et mon CV interactif.',
       technologies: ['Angular', 'Bootstrap', 'SCSS'],
-      link: 'https://abdourazack.github.io/CV/'
+      link: 'aesthetic-unicorn-4d7bcb.netlify.app'
     },
     {
       title: 'API REST Étudiante',
