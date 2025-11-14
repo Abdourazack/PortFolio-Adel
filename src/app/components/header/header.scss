@@ -7,8 +7,9 @@
   box-shadow: 0 0 30px rgba(13, 202, 240, 0.5);
   text-align: center;
   transition: transform 0.8s ease, opacity 0.8s ease;
-  opacity: 0;
+  opacity: 0; // invisible par défaut
 
+  // Animation : devient visible quand la classe animate est appliquée
   &.animate {
     opacity: 1;
     transform: translateY(0);
@@ -28,7 +29,11 @@
 
   .neon-text {
     color: #0dcaf0;
-    text-shadow: 0 0 5px #0dcaf0, 0 0 10px #0dcaf0, 0 0 20px #0dcaf0, 0 0 40px #0dcaf0;
+    text-shadow: 
+      0 0 5px #0dcaf0, 
+      0 0 10px #0dcaf0, 
+      0 0 20px #0dcaf0, 
+      0 0 40px #0dcaf0;
   }
 
   .contact-info {
@@ -43,6 +48,10 @@
         text-decoration: underline;
         color: #0bbcd8;
       }
+    }
+
+    i {
+      margin-right: 5px;
     }
   }
 }
