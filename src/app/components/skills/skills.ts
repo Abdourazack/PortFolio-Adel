@@ -28,8 +28,8 @@ export class Skills {
   { name: 'Linux (bases)', level: 60 },
   { name: 'Windows', level: 80 },
   { name: 'Réseau (bases)', level: 60 },
-  { name: 'Gestion de projet / Agile', level: 65 },
-  { name: 'Scripting Kali Linux', level: 60 }
+  { name: 'Gestion de projet / Agile', level: 95 },
+  { name: 'Scripting Kali Linux (bases)', level: 60 }
   ];
 
 }
