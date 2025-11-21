@@ -1,14 +1,44 @@
 .neon-card {
   background: #111827;
   border: 2px solid #0dcaf0;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #0dcaf0;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #0dcaf0;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #0dcaf0, 0 0 60px #0dcaf0;
+  }
+
+  p {
+    line-height: 1.7;
+    font-size: 1.1rem;
+    color: #d1d5db;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    margin-bottom: 1.2rem;
+  }
 }
 
-p{
-  line-height: 1.6;
-  font-size: 1.1rem;
-  color: #d1d5db;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.neon-title {
+  font-size: 2rem;
+  color: #0dcaf0;
+  font-weight: bold;
+  text-shadow: 
+    0 0 5px #0dcaf0,
+    0 0 10px #0dcaf0,
+    0 0 20px #0dcaf0;
 }
 
+@media (max-width: 768px) {
+  .neon-card {
+    padding: 2rem;
+  }
+
+  .neon-title {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
