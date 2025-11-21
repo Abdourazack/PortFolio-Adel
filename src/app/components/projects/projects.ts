@@ -22,7 +22,7 @@ export class Projects {
       title: 'Portfolio Personnel',
       description: 'Mon site pour présenter mes projets et mon CV interactif.',
       technologies: ['Angular', 'Bootstrap', 'SCSS'],
-      link: 'https://aesthetic-unicorn-4d7bcb.netlify.app',
+      link: 'https://cv-dev-web-fullstack-junoir.netlify.app/',
       code: 'https://github.com/Abdourazack/PortFolio-Adel.git'
     },
     {
