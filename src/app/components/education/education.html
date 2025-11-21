@@ -1,9 +1,11 @@
-<section class="neon-card p-4">
-  <h2 class="section-title">Formation</h2>
+<section id="education" class="neon-card p-5 my-5">
+  <h2 class="neon-title mb-4">Formation</h2>
 
-  <ul>
-    <li><strong>Bachelier en Informatique</strong> – En dernière année</li>
-    <li>Projets full stack, API NestJS, applications Angular</li>
-    <li>Initiation Cloud, Git, DevOps</li>
-  </ul>
+  <div *ngFor="let formation of formations" class="formation-item mb-4">
+    <h3 class="formation-title">{{ formation.title }}</h3>
+    <p class="formation-status">{{ formation.status }}</p>
+    <ul class="formation-details">
+      <li *ngFor="let detail of formation.details">{{ detail }}</li>
+    </ul>
+  </div>
 </section>

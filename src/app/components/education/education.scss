@@ -2,5 +2,66 @@
   background: #111827;
   border: 2px solid #0dcaf0;
   border-radius: 12px;
-  color: white;
+  color: #d1d5db;
+  padding: 2rem;
+  box-shadow: 0 0 20px #0dcaf0;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 30px #0dcaf0, 0 0 60px #0dcaf0;
+  }
+
+  .neon-title {
+    font-size: 2rem;
+    color: #0dcaf0;
+    font-weight: bold;
+    text-shadow: 0 0 5px #0dcaf0, 0 0 10px #0dcaf0, 0 0 20px #0dcaf0;
+  }
+
+  .formation-item {
+    margin-bottom: 2rem;
+
+    .formation-title {
+      font-size: 1.5rem;
+      color: #22d3ee;
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+    }
+
+    .formation-status {
+      font-style: italic;
+      margin-bottom: 0.8rem;
+      color: #d1d5db;
+    }
+
+    .formation-details {
+      list-style: disc;
+      padding-left: 1.5rem;
+
+      li {
+        margin-bottom: 0.6rem;
+        font-size: 1.1rem;
+        line-height: 1.6;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .neon-card {
+    padding: 1.5rem;
+  }
+
+  .neon-title {
+    font-size: 1.6rem;
+  }
+
+  .formation-item .formation-title {
+    font-size: 1.3rem;
+  }
+
+  .formation-details li {
+    font-size: 1rem;
+  }
 }
