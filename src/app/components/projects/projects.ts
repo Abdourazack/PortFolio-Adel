@@ -30,7 +30,7 @@ export class Projects {
       description: `API REST complète pour la gestion des articles, construite avec une architecture MVC moderne.
   Cette API permet de créer, lire, mettre à jour et supprimer des articles, avec une interface dynamique EJS pour la visualisation côté serveur.
   La base de données MySQL assure une gestion fiable des données, et l’application est déployée en production sur Alwaysdata.`,
-      technologies: ['Express.js', 'Node.js', 'MySQL', 'EJS', 'MVC', 'JWT'],
+      technologies: ['Express.js', 'Node.js', 'MySQL', 'EJS', 'MVC'],
       code: 'https://github.com/Abdourazack/gestion-article-mvc.git',
       link: 'https://gestionarticle.alwaysdata.net/'
     },
@@ -53,7 +53,5 @@ export class Projects {
       technologies: ['NestJS', 'Node.js', 'TypeScript', 'MongoDB', 'Docker', 'MongoDB Compass', 'REST API', 'NoSQL', 'CRUD'],
       code: 'https://github.com/Abdourazack/Librairie.git'
     }
-
-
   ];
 }
