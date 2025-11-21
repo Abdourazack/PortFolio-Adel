@@ -26,10 +26,10 @@ export class Projects {
       code: 'https://github.com/Abdourazack/PortFolio-Adel.git'
     },
     {
-      title: 'API REST Étudiante - Gestion Étudiants',
-      description: `API REST complète pour la gestion des étudiants, construite avec une architecture MVC moderne.
-      Cette API permet de créer, lire, mettre à jour et supprimer des étudiants, avec une interface dynamique EJS pour la visualisation côté serveur.
-      La base de données MySQL assure une gestion fiable des données et l'application est déployée en production sur Alwaysdata.`,
+      title: 'API REST - Gestion des Articles',
+      description: `API REST complète pour la gestion des articles, construite avec une architecture MVC moderne.
+  Cette API permet de créer, lire, mettre à jour et supprimer des articles, avec une interface dynamique EJS pour la visualisation côté serveur.
+  La base de données MySQL assure une gestion fiable des données, et l’application est déployée en production sur Alwaysdata.`,
       technologies: ['Express.js', 'Node.js', 'MySQL', 'EJS', 'MVC', 'JWT'],
       code: 'https://github.com/Abdourazack/gestion-article-mvc.git',
       link: 'https://gestionarticle.alwaysdata.net/'
@@ -44,15 +44,15 @@ export class Projects {
     },
 
     {
-  title: 'API REST - Gestion Librairie',
-  description: `API REST complète pour la gestion d'une librairie, construite avec NestJS. 
+      title: 'API REST - Gestion Librairie',
+      description: `API REST complète pour la gestion d'une librairie, construite avec NestJS. 
   Cette API permet de gérer les livres, auteurs et utilisateurs avec des opérations CRUD, 
   et expose des endpoints sécurisés et structurés pour l'accès aux données. 
   La base de données MongoDB (NoSQL) est organisée en collections pour une gestion flexible des données. 
   Docker est utilisé pour le déploiement et l'isolation de l'environnement, et MongoDB Compass sert d'interface graphique pour la visualisation et la gestion de la base de données.`,
-  technologies: ['NestJS', 'Node.js', 'TypeScript', 'MongoDB', 'Docker', 'MongoDB Compass', 'REST API', 'NoSQL', 'CRUD'],
-  code: 'https://github.com/Abdourazack/Librairie.git'
-}
+      technologies: ['NestJS', 'Node.js', 'TypeScript', 'MongoDB', 'Docker', 'MongoDB Compass', 'REST API', 'NoSQL', 'CRUD'],
+      code: 'https://github.com/Abdourazack/Librairie.git'
+    }
 
 
   ];
