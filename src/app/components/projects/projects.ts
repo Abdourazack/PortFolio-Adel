@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule } from "@angular/common";
+import { Component } from "@angular/core";
 
 interface Project {
   title: string;
@@ -22,13 +22,17 @@ export class Projects {
       title: 'Portfolio Personnel',
       description: 'Mon site pour présenter mes projets et mon CV interactif.',
       technologies: ['Angular', 'Bootstrap', 'SCSS'],
-      link: 'aesthetic-unicorn-4d7bcb.netlify.app'
+      link: 'https://aesthetic-unicorn-4d7bcb.netlify.app',
+      code: 'https://github.com/Abdourazack/PortFolio-Adel.git'
     },
     {
-      title: 'API REST Étudiante',
-      description: 'API sécurisée avec JWT réalisée avec NestJS et Node.js.',
-      technologies: ['NestJS', 'Node.js', 'MongoDB'],
-      code: 'https://github.com/abdourazack/api-projet'
+      title: 'API REST Étudiante - Gestion Étudiants',
+      description: `API REST complète pour la gestion des étudiants, construite avec une architecture MVC moderne.
+      Cette API permet de créer, lire, mettre à jour et supprimer des étudiants, avec une interface dynamique EJS pour la visualisation côté serveur.
+      La base de données MySQL assure une gestion fiable des données et l'application est déployée en production sur Alwaysdata.`,
+      technologies: ['Express.js', 'Node.js', 'MySQL', 'EJS', 'MVC', 'JWT'],
+      code: 'https://github.com/Abdourazack/gestion-article-mvc.git',
+      link: 'https://gestionarticle.alwaysdata.net/'
     }
   ];
 }
