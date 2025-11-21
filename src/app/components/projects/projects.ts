@@ -34,6 +34,14 @@ export class Projects {
       code: 'https://github.com/Abdourazack/gestion-article-mvc.git',
       link: 'https://gestionarticle.alwaysdata.net/'
     },
-   
+  {
+  title: 'Site Vitrine - Bistrot de Quartier',
+  description: `Site vitrine simple pour un bistrot de quartier, réalisé dans le cadre de la première année en HTML et CSS. 
+  Le site présente l'accueil, le menu, les horaires et les contacts du bistrot, avec une mise en page responsive et un design convivial.`,
+  technologies: ['HTML', 'CSS', 'Responsive Design'],
+  code: 'https://github.com/Abdourazack/L-Endroit.git',
+  link: 'https://lapasserelle.netlify.app'
+}
+
   ];
 }
