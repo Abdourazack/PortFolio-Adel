@@ -1,44 +1,126 @@
+/* SECTION BACKGROUND */
 .neon-section {
   background-color: #0f111b;
-  border-radius: 15px;
-  padding: 30px;
+  border-radius: 16px;
+  padding: 40px;
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  text-shadow: 0 0 8px #0dcaf0, 0 0 16px #0dcaf0;
-  color: #0dcaf0;
-}
-
-.neon-card {
+/* CARD PRINCIPALE AVEC REFLET */
+.projects-card {
   background: linear-gradient(145deg, #111827, #1a1f3a);
   border: 2px solid #0dcaf0;
-  border-radius: 12px;
+  border-radius: 15px;
+  padding: 2.5rem;
   color: #e6edf3;
-  box-shadow: 0 0 15px #0dcaf0;
+
+  /* Effet de glow permanent */
+  box-shadow:
+    0 0 20px #0dcaf0,
+    0 0 40px rgba(13, 202, 240, 0.5);
+
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  /* Hover plus fort */
+  &:hover {
+    transform: translateY(-5px) scale(1.01);
+    box-shadow:
+      0 0 35px #0dcaf0,
+      0 0 70px rgba(13, 202, 240, 0.8);
+  }
 }
 
-.hover-card:hover {
-  transform: translateY(-5px) scale(1.02);
-  box-shadow: 0 0 25px #0dcaf0, 0 0 40px rgba(13, 202, 240, 0.6);
+/* TITRE */
+.section-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #0dcaf0;
+  text-shadow: 0 0 10px #0dcaf0, 0 0 20px #0dcaf0;
+  margin-bottom: 1.5rem;
+  text-align: center;
 }
 
-.card-title {
-  font-weight: 600;
+/* LISTE DES PROJETS DANS UNE SEULE CARD */
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
-.card-text {
-  font-size: 1rem;
-  color: #cbd5e1;
+/* STYLE DE CHAQUE PROJET */
+.project-item {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 1.5rem;
+  border-radius: 12px;
+  border-left: 3px solid #0dcaf0;
+  transition: background 0.3s ease, transform 0.2s ease;
+
+  &:hover {
+    background: rgba(13, 202, 240, 0.07);
+    transform: translateX(5px);
+  }
+
+  h3 {
+    color: #0dcaf0;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .description {
+    color: #cbd5e1;
+    margin-bottom: 0.7rem;
+  }
+
+  .tech {
+    color: #93c5fd;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+  }
 }
 
-.btn-hover {
+/* BOUTONS */
+.neon-btn,
+.neon-btn-outline {
+  display: inline-block;
+  padding: 0.5rem 1.2rem;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
   transition: all 0.3s ease;
 }
 
-.btn-hover:hover {
-  transform: scale(1.05);
-  text-decoration: none;
+/* Bouton plein */
+.neon-btn {
+  background: #0dcaf0;
+  color: #111827;
+  border: 2px solid #0dcaf0;
+
+  &:hover {
+    box-shadow: 0 0 15px #0dcaf0;
+    background: #22d3ee;
+  }
+}
+
+/* Bouton contour */
+.neon-btn-outline {
+  background: transparent;
+  border: 2px solid #0dcaf0;
+  color: #0dcaf0;
+
+  &:hover {
+    background: #0dcaf0;
+    color: #111827;
+    box-shadow: 0 0 15px #0dcaf0;
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .projects-card {
+    padding: 1.5rem;
+  }
+
+  .project-item {
+    padding: 1rem;
+  }
 }
