@@ -9,27 +9,51 @@ import { Component } from '@angular/core';
 })
 export class Skills {
 
-    skills = [
-  { name: 'HTML', level: 95 },
-  { name: 'CSS / SCSS', level: 90 },
-  { name: 'JavaScript', level: 85 },
-  { name: 'TypeScript', level: 80 },
-  { name: 'Angular', level: 80 },
-  { name: 'Node.js', level: 80 },
-  { name: 'NestJS', level: 75 },
-  { name: 'Express', level: 70 },
-  { name: 'Python', level: 65 },
-  { name: 'Git', level: 85 },
-  { name: 'MongoDB', level: 70 },
-  { name: 'Mongo Compass', level: 65 },
-  { name: 'MySQL / PHPMyAdmin', level: 70 },
-  { name: 'Docker', level: 80 },
-  { name: 'VirtualBox / VMware', level: 70 },
-  { name: 'Linux (bases)', level: 60 },
-  { name: 'Windows', level: 80 },
-  { name: 'Réseau (bases)', level: 60 },
-  { name: 'Gestion de projet / Agile', level: 95 },
-  { name: 'Scripting Kali Linux (bases)', level: 60 }
+  skillGroups = [
+    {
+      title: 'Front-end',
+      skills: [
+        'HTML / CSS / SCSS',
+        'JavaScript (ES6+)',
+        'TypeScript',
+        'Angular',
+        'React (en cours d’apprentissage)'
+      ]
+    },
+    {
+      title: 'Back-end',
+      skills: [
+        'Node.js',
+        'Express.js',
+        'NestJS',
+        'API REST',
+        'Architecture MVC'
+      ]
+    },
+    {
+      title: 'Bases de données',
+      skills: [
+        'MySQL',
+        'MongoDB',
+        'Modélisation de données'
+      ]
+    },
+    {
+      title: 'Outils & DevOps',
+      skills: [
+        'Git / GitHub',
+        'Docker',
+        'Environnements virtualisés'
+      ]
+    },
+    {
+      title: 'Méthodologies',
+      skills: [
+        'Méthodologie Agile',
+        'Travail en équipe',
+        'Gestion de projet'
+      ]
+    }
   ];
-
 }
+

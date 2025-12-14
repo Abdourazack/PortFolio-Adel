@@ -9,19 +9,18 @@ import { Component } from '@angular/core';
 })
 export class Education {
 
-    formations = [
+  formations = [
     {
       title: 'Bachelier en Informatique',
-      status: 'En dernière année',
+      status: 'En cours – dernière année',
       details: [
-        'Projets full stack : Angular, Node.js, Express, NestJS',
-        'Développement front-end et back-end',
-        'Bases en Python et scripting Kali Linux',
-        'Gestion de bases de données : MySQL, MongoDB',
-        'Utilisation de Docker, VirtualBox, VMware',
-        'Notions de réseaux et administration système',
-        'Méthodologie Agile pour la gestion de projets'
+        'Développement d’applications web full stack',
+        'Conception et implémentation d’APIs REST',
+        'Projets académiques proches de cas réels',
+        'Travail en équipe avec méthodologie Agile',
+        'Utilisation d’outils modernes (Git, Docker, bases de données)'
       ]
     }
   ];
 }
+

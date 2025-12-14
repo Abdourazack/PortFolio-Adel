@@ -7,13 +7,12 @@ import { Component , OnInit} from '@angular/core';
   styleUrl: './header.scss',
 })
 export class Header implements OnInit {
-  // Pour contrôler les animations
-  public animateHeader: boolean = false;
+  public animateHeader = false;
 
   ngOnInit(): void {
-    // Déclenche l'animation après le chargement
     setTimeout(() => {
       this.animateHeader = true;
     }, 200);
   }
 }
+

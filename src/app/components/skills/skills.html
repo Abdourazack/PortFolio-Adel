@@ -1,12 +1,10 @@
 <section id="skills" class="neon-card p-5 my-5">
   <h2 class="neon-title mb-4">Compétences</h2>
-  <div *ngFor="let skill of skills" class="skill-item mb-3">
-    <div class="d-flex justify-content-between mb-1">
-      <span>{{ skill.name }}</span>
-      <span>{{ skill.level }}%</span>
-    </div>
-    <div class="progress">
-      <div class="progress-bar" [style.width.%]="skill.level"></div>
-    </div>
+
+  <div *ngFor="let group of skillGroups" class="skill-group mb-4">
+    <h3 class="skill-group-title">{{ group.title }}</h3>
+    <ul class="skill-list">
+      <li *ngFor="let skill of group.skills">{{ skill }}</li>
+    </ul>
   </div>
 </section>

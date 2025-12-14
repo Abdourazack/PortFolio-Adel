@@ -2,17 +2,16 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
-  imports: [],
   templateUrl: './contact.html',
-  styleUrl: './contact.scss',
+  styleUrls: ['./contact.scss']
 })
 export class Contact {
 
-    email: string = 'adelhared123@gmail.com.com';
+  email: string = 'adel.hared123@gmail.com';
   linkedInUrl: string = 'https://www.linkedin.com/in/adel-abdourazack-hared-8295781b3/';
   message: string = '';
 
-  // Fonction pour gérer le clic sur LinkedIn
+  // Fonction pour visiter LinkedIn
   visitLinkedIn() {
     this.message = 'Vous allez être redirigé vers LinkedIn...';
     window.open(this.linkedInUrl, '_blank');

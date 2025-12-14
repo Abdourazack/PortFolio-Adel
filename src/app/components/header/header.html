@@ -1,31 +1,27 @@
 <header class="header-container" [class.animate]="animateHeader">
   <div class="header-box">
     <!-- Photo de profil -->
-    <img src="img/20221006_132041.jpg" alt="Adel Abdourazack" class="profile-img">
+    <div class="profile-wrapper">
+      <img src="img/20221006_132041.jpg" alt="Adel Abdourazack" class="profile-img">
+    </div>
 
     <!-- Nom -->
-    <h1 class="neon-text">Adel Abdourazack Hared</h1>
+    <h1 class="neon-text name">Adel Abdourazack Hared</h1>
 
     <!-- Profession -->
-    <p class="lead text-light">Développeur Web Full Stack Junior</p>
+    <p class="job-title">Développeur Web Full Stack Junior</p>
 
     <!-- Localisation -->
-    <p class="text-secondary">📍 Tournai, Belgique</p>
+    <p class="location">📍 Tournai, Belgique</p>
 
     <!-- Contact -->
     <div class="contact-info">
-      <p>
-        <i class="bi bi-envelope-fill text-info"></i>
-        <a href="mailto:adel.hared123@gmail.com" class="contact-link">
-          adel.hared123@gmail.com
-        </a>
-      </p>
-      <p>
-        <i class="bi bi-telephone-fill text-info"></i>
-        <a href="tel:+32465186031" class="contact-link">
-          +32 4 65186031
-        </a>
-      </p>
+      <a href="mailto:adel.hared123@gmail.com" class="contact-link">
+        <i class="bi bi-envelope-fill"></i> adel.hared123@gmail.com
+      </a>
+      <a href="tel:+32465186031" class="contact-link">
+        <i class="bi bi-telephone-fill"></i> +32 4 65186031
+      </a>
     </div>
   </div>
 </header>

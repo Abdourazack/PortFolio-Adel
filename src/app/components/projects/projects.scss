@@ -1,35 +1,24 @@
-/* SECTION BACKGROUND */
 .neon-section {
   background-color: #0f111b;
   border-radius: 16px;
   padding: 40px;
 }
 
-/* CARD PRINCIPALE AVEC REFLET */
 .projects-card {
   background: linear-gradient(145deg, #111827, #1a1f3a);
   border: 2px solid #0dcaf0;
   border-radius: 15px;
   padding: 2.5rem;
   color: #e6edf3;
-
-  /* Effet de glow permanent */
-  box-shadow:
-    0 0 20px #0dcaf0,
-    0 0 40px rgba(13, 202, 240, 0.5);
-
+  box-shadow: 0 0 20px #0dcaf0, 0 0 40px rgba(13, 202, 240, 0.5);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-  /* Hover plus fort */
   &:hover {
     transform: translateY(-5px) scale(1.01);
-    box-shadow:
-      0 0 35px #0dcaf0,
-      0 0 70px rgba(13, 202, 240, 0.8);
+    box-shadow: 0 0 35px #0dcaf0, 0 0 70px rgba(13, 202, 240, 0.8);
   }
 }
 
-/* TITRE */
 .section-title {
   font-size: 2.2rem;
   font-weight: bold;
@@ -39,29 +28,28 @@
   text-align: center;
 }
 
-/* LISTE DES PROJETS DANS UNE SEULE CARD */
 .project-list {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-/* STYLE DE CHAQUE PROJET */
 .project-item {
   background: rgba(255, 255, 255, 0.03);
   padding: 1.5rem;
   border-radius: 12px;
-  border-left: 3px solid #0dcaf0;
-  transition: background 0.3s ease, transform 0.2s ease;
+  border-left: 4px solid #0dcaf0;
+  transition: all 0.3s ease;
 
   &:hover {
-    background: rgba(13, 202, 240, 0.07);
+    background: rgba(13, 202, 240, 0.08);
     transform: translateX(5px);
+    box-shadow: 0 0 15px #0dcaf0, 0 0 25px rgba(13, 202, 240, 0.5);
   }
 
-  h3 {
+  h3.project-title {
     color: #0dcaf0;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     margin-bottom: 0.5rem;
   }
 
@@ -70,14 +58,30 @@
     margin-bottom: 0.7rem;
   }
 
-  .tech {
-    color: #93c5fd;
+  /* Badges */
+  .tech-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
     margin-bottom: 1rem;
-    font-size: 0.95rem;
+
+    .badge {
+      padding: 0.25rem 0.6rem;
+      border-radius: 6px;
+      background: rgba(13, 202, 240, 0.15);
+      color: #0dcaf0;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-shadow: 0 0 4px rgba(13, 202, 240, 0.7);
+    }
+  }
+
+  .links {
+    display: flex;
+    gap: 0.7rem;
   }
 }
 
-/* BOUTONS */
 .neon-btn,
 .neon-btn-outline {
   display: inline-block;
@@ -89,19 +93,17 @@
   transition: all 0.3s ease;
 }
 
-/* Bouton plein */
 .neon-btn {
   background: #0dcaf0;
   color: #111827;
   border: 2px solid #0dcaf0;
 
   &:hover {
-    box-shadow: 0 0 15px #0dcaf0;
     background: #22d3ee;
+    box-shadow: 0 0 15px #0dcaf0, 0 0 25px rgba(13, 202, 240, 0.6);
   }
 }
 
-/* Bouton contour */
 .neon-btn-outline {
   background: transparent;
   border: 2px solid #0dcaf0;
@@ -114,7 +116,7 @@
   }
 }
 
-/* RESPONSIVE */
+/* Responsive */
 @media (max-width: 768px) {
   .projects-card {
     padding: 1.5rem;
@@ -122,5 +124,9 @@
 
   .project-item {
     padding: 1rem;
+  }
+
+  .tech-badges .badge {
+    font-size: 0.75rem;
   }
 }

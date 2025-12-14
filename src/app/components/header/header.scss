@@ -1,57 +1,127 @@
 .header-container {
   display: flex;
   justify-content: center;
-  padding: 40px;
+  padding: 3rem 2rem;
   background: linear-gradient(135deg, #0a0f2d, #141b33);
-  border-radius: 15px;
-  box-shadow: 0 0 30px rgba(13, 202, 240, 0.5);
+  border-radius: 18px;
+  box-shadow: 0 0 35px rgba(13, 202, 240, 0.45);
   text-align: center;
-  transition: transform 0.8s ease, opacity 0.8s ease;
-  opacity: 0; // invisible par défaut
 
-  // Animation : devient visible quand la classe animate est appliquée
+  opacity: 0;
+  transform: translateY(25px);
+  transition: opacity 0.8s ease, transform 0.8s ease, box-shadow 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow:
+      0 0 40px rgba(13, 202, 240, 0.9),
+      0 0 60px rgba(13, 202, 240, 0.6),
+      inset 0 0 20px rgba(13, 202, 240, 0.2);
+  }
+
   &.animate {
     opacity: 1;
     transform: translateY(0);
   }
+}
 
-  .header-box {
-    max-width: 700px;
+.header-box {
+  max-width: 720px;
+  width: 100%;
+}
+
+/* PHOTO */
+.profile-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0dcaf0;
+  box-shadow:
+    0 0 15px rgba(13, 202, 240, 0.8),
+    0 0 30px rgba(13, 202, 240, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow:
+      0 0 25px rgba(13, 202, 240, 1),
+      0 0 45px rgba(13, 202, 240, 0.6);
   }
+}
 
-  .profile-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-    border: 3px solid #0dcaf0;
-  }
+/* NOM */
+.neon-text.name {
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: #0dcaf0;
+  margin-bottom: 0.4rem;
+  text-shadow:
+    0 0 8px #0dcaf0,
+    0 0 18px rgba(13, 202, 240, 0.8),
+    0 0 35px rgba(13, 202, 240, 0.6);
+}
 
-  .neon-text {
-    color: #0dcaf0;
-    text-shadow: 
-      0 0 5px #0dcaf0, 
-      0 0 10px #0dcaf0, 
-      0 0 20px #0dcaf0, 
-      0 0 40px #0dcaf0;
-  }
+/* POSTE */
+.job-title {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #e5e7eb;
+  margin-bottom: 0.6rem;
+}
 
-  .contact-info {
-    margin-top: 15px;
+/* LOCALISATION */
+.location {
+  font-size: 1rem;
+  color: #9ca3af;
+  margin-bottom: 1.4rem;
+}
+
+/* CONTACT */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  font-size: 1.05rem;
+}
+
+.contact-link {
+  color: #22d3ee;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  transition: color 0.25s ease, text-shadow 0.25s ease;
+
+  i {
     font-size: 1.1rem;
+  }
 
-    a.contact-link {
-      color: #0dcaf0;
-      text-decoration: none;
+  &:hover {
+    color: #0dcaf0;
+    text-shadow: 0 0 10px rgba(13, 202, 240, 0.8);
+  }
+}
 
-      &:hover {
-        text-decoration: underline;
-        color: #0bbcd8;
-      }
-    }
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profile-img {
+    width: 110px;
+    height: 110px;
+  }
 
-    i {
-      margin-right: 5px;
-    }
+  .neon-text.name {
+    font-size: 1.8rem;
+  }
+
+  .job-title {
+    font-size: 1.1rem;
   }
 }

@@ -1,59 +1,120 @@
+/* ===============================
+   CARD GÉNÉRALE
+================================ */
 .neon-card {
-  background: #111827;
-  border: 2px solid #0dcaf0;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #0dcaf0;
-  padding: 2rem;
-  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border: 2px solid rgba(13, 202, 240, 0.85);
+  border-radius: 14px;
+  padding: 2.2rem;
+
+  box-shadow:
+    0 0 18px rgba(13, 202, 240, 0.6),
+    inset 0 0 12px rgba(13, 202, 240, 0.15);
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
   &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 30px #0dcaf0, 0 0 60px #0dcaf0;
-  }
-
-  .skill-item {
-    .progress {
-      height: 12px;
-      background-color: #1e293b;
-      border-radius: 6px;
-      overflow: hidden;
-
-      .progress-bar {
-        height: 100%;
-        background: linear-gradient(90deg, #0dcaf0, #22d3ee);
-        transition: width 1s ease-in-out;
-        border-radius: 6px;
-      }
-    }
-
-    span {
-      font-family: 'Verdana', Geneva, Tahoma, sans-serif;
-      color: #d1d5db;
-      font-weight: 500;
-    }
+    transform: translateY(-6px);
+    box-shadow:
+      0 0 28px rgba(13, 202, 240, 0.9),
+      0 0 55px rgba(13, 202, 240, 0.6),
+      inset 0 0 18px rgba(13, 202, 240, 0.2);
   }
 }
 
+/* ===============================
+   TITRE PRINCIPAL
+================================ */
 .neon-title {
-  font-size: 2rem;
+  font-size: 2.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: #0dcaf0;
-  font-weight: bold;
-  text-shadow: 
-    0 0 5px #0dcaf0,
+  margin-bottom: 1.8rem;
+
+  text-shadow:
     0 0 10px #0dcaf0,
-    0 0 20px #0dcaf0;
+    0 0 20px rgba(13, 202, 240, 0.9),
+    0 0 35px rgba(13, 202, 240, 0.7);
 }
 
+/* ===============================
+   GROUPE DE COMPÉTENCES
+================================ */
+.skill-group {
+  margin-bottom: 2rem;
+}
+
+/* ===============================
+   TITRE DE CATÉGORIE (FRONT, BACK…)
+================================ */
+.skill-group-title {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 1rem;
+
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+
+  color: #0dcaf0; /* 🔥 MÊME COULEUR QUE LES COMPÉTENCES */
+  background: rgba(13, 202, 240, 0.12);
+  border-left: 5px solid #0dcaf0;
+  border-radius: 6px;
+
+  text-shadow:
+    0 0 8px rgba(13, 202, 240, 0.9),
+    0 0 16px rgba(13, 202, 240, 0.6);
+}
+
+/* ===============================
+   LISTE DES COMPÉTENCES
+================================ */
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 1.4rem;
+
+    font-size: 1.05rem;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    color: #e5e7eb;
+    line-height: 1.6;
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: #0dcaf0;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(13, 202, 240, 0.8);
+    }
+  }
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
 @media (max-width: 768px) {
   .neon-card {
-    padding: 1.5rem;
+    padding: 1.6rem;
   }
 
   .neon-title {
     font-size: 1.6rem;
   }
 
-  .skill-item span {
+  .skill-group-title {
+    font-size: 1.15rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .skill-list li {
     font-size: 0.95rem;
   }
 }

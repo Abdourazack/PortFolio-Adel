@@ -1,64 +1,109 @@
-.neon-card {
-  background: #111827;
-  border: 2px solid #0dcaf0;
+.contact-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border: 2px solid rgba(13, 202, 240, 0.8);
   border-radius: 16px;
-  padding: 2rem;
-  color: #fff;
+  padding: 2.5rem 2rem;
+  color: #e5e7eb;
   text-align: center;
-  box-shadow: 0 0 10px #0dcaf0, 0 0 20px #0dcaf0 inset;
-  transition: all 0.3s ease;
+  box-shadow: 
+    0 0 15px rgba(13, 202, 240, 0.6),
+    inset 0 0 10px rgba(13, 202, 240, 0.15);
+  transition: all 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    box-shadow: 0 0 20px #0dcaf0, 0 0 30px #0dcaf0 inset;
+    transform: translateY(-5px);
+    box-shadow: 
+      0 0 35px rgba(13, 202, 240, 0.9),
+      0 0 50px rgba(13, 202, 240, 0.6),
+      inset 0 0 15px rgba(13, 202, 240, 0.2);
   }
 }
 
 .section-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .neon-text {
   color: #0dcaf0;
   text-shadow:
-    0 0 5px #0dcaf0,
-    0 0 10px #0dcaf0,
-    0 0 20px #0dcaf0;
+    0 0 8px #0dcaf0,
+    0 0 16px rgba(13, 202, 240, 0.8),
+    0 0 30px rgba(13, 202, 240, 0.6);
 }
 
-.email {
-  cursor: pointer;
-  color: #0dcaf0;
-  text-decoration: underline;
-  transition: all 0.2s ease;
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 
-  &:hover {
-    color: #06b6d4;
-    text-shadow: 0 0 8px #0dcaf0;
+  .contact-line {
+    font-size: 1.05rem;
+
+    .email {
+      display: inline-block;
+      background: rgba(13, 202, 240, 0.1);
+      padding: 0.3rem 0.6rem;
+      border-radius: 6px;
+      color: #22d3ee;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      text-decoration: none; // <-- supprime le soulignement
+
+      &:hover {
+        color: #0dcaf0;
+        text-shadow: 0 0 10px rgba(13, 202, 240, 0.8);
+        background: rgba(13, 202, 240, 0.2);
+      }
+    }
   }
-}
 
-.neon-btn {
-  background: transparent;
-  border: 2px solid #0dcaf0;
-  border-radius: 12px;
-  color: #0dcaf0;
-  font-weight: bold;
-  padding: 0.6rem 1.5rem;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  text-transform: uppercase;
+  .neon-btn {
+    background: transparent;
+    border: 2px solid #0dcaf0;
+    border-radius: 12px;
+    color: #0dcaf0;
+    font-weight: bold;
+    padding: 0.6rem 1.8rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 
-  &:hover {
-    background: #0dcaf0;
-    color: #111827;
-    box-shadow: 0 0 15px #0dcaf0, 0 0 25px #0dcaf0 inset;
+    &:hover {
+      background: #0dcaf0;
+      color: #111827;
+      box-shadow: 
+        0 0 20px #0dcaf0,
+        0 0 35px #0dcaf0 inset;
+    }
   }
 }
 
 .message {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: #06b6d4;
-  margin-top: 0.5rem;
+  margin-top: 0.7rem;
+  min-height: 1.3em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-line .email,
+  .neon-btn {
+    font-size: 0.95rem;
+  }
 }

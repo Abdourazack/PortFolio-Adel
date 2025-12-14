@@ -1,14 +1,16 @@
-<section class="neon-card p-6 text-center">
+<section class="neon-card contact-card text-center p-6">
   <h2 class="section-title neon-text">Contact</h2>
 
-  <p>
-    Email : 
-    <span class="email" (click)="copyEmail()">{{ email }}</span>
-  </p>
+  <div class="contact-info">
+    <p class="contact-line">
+      Email :
+      <span class="email" (click)="copyEmail()" title="Cliquez pour copier">{{ email }}</span>
+    </p>
 
-  <button class="btn neon-btn mt-3" (click)="visitLinkedIn()">
-    LinkedIn
-  </button>
+    <button class="btn neon-btn mt-3" (click)="visitLinkedIn()">
+      LinkedIn
+    </button>
+  </div>
 
   <p class="message mt-2">{{ message }}</p>
 </section>

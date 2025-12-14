@@ -1,11 +1,17 @@
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow sticky-top">
+<nav class="navbar sticky-top shadow neon-navbar">
   <div class="container">
-    <a class="navbar-brand fw-bold" href="#">Adel Hared</a>
+    <a class="navbar-brand fw-bold neon-text" href="#">Adel Hared</a>
+
+    <!-- Burger menu -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="burger-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
     </button>
+
     <div class="collapse navbar-collapse" id="navbarContent">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
         <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
@@ -14,20 +20,23 @@
         <li class="nav-item"><a class="nav-link" href="#education">Formation</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
+
       <div class="d-flex ms-lg-3">
-        <a href="https://github.com/abdourazack" target="_blank" class="btn btn-outline-light btn-sm me-2">GitHub</a>
-        <a href="https://linkedin.com/in/adel-abdourazack-hared" target="_blank" class="btn btn-outline-info btn-sm">LinkedIn</a>
+        <a href="https://github.com/abdourazack" target="_blank" class="btn btn-outline-light btn-sm me-2 neon-btn">GitHub</a>
+        <a href="https://linkedin.com/in/adel-abdourazack-hared" target="_blank" class="btn btn-outline-info btn-sm neon-btn">LinkedIn</a>
       </div>
     </div>
   </div>
 </nav>
 
-<main class="container my-5">
+
+<!-- Main content -->
+<main class="main-container my-5">
   <app-header></app-header>
   <app-about></app-about>
-  <app-skills></app-skills>
-  <app-projects></app-projects>
   <app-education></app-education>
+  <app-projects></app-projects>
+  <app-skills></app-skills>
   <app-contact></app-contact>
 </main>
 

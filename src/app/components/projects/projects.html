@@ -1,19 +1,25 @@
 <section id="projects" class="neon-section">
   <div class="neon-card projects-card">
-    <h2 class="section-title">Projets</h2>
+    <h2 class="section-title neon-text">Projets</h2>
 
     <div class="project-list">
       <div class="project-item" *ngFor="let p of projects">
-        <h3>{{ p.title }}</h3>
+        <h3 class="project-title">{{ p.title }}</h3>
         <p class="description">{{ p.description }}</p>
 
-        <p class="tech">
-          <strong>Technos :</strong> {{ p.technologies.join(', ') }}
-        </p>
+        <!-- Badges de technologies -->
+        <div class="tech-badges">
+          <span class="badge" *ngFor="let tech of p.technologies">{{ tech }}</span>
+        </div>
 
+        <!-- Liens -->
         <div class="links">
-          <a *ngIf="p.link" [href]="p.link" target="_blank" class="btn neon-btn">Voir</a>
-          <a *ngIf="p.code" [href]="p.code" target="_blank" class="btn neon-btn-outline">Code</a>
+          <a *ngIf="p.link" [href]="p.link" target="_blank" class="btn neon-btn">
+            🔗 Voir
+          </a>
+          <a *ngIf="p.code" [href]="p.code" target="_blank" class="btn neon-btn-outline">
+            🖥️ Code
+          </a>
         </div>
       </div>
     </div>
