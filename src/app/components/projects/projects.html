@@ -14,10 +14,10 @@
 
         <!-- Liens -->
         <div class="links">
-          <a *ngIf="p.link" [href]="p.link" target="_blank" class="btn neon-btn">
+          <a [href]="p.link || '#'" target="_blank" class="btn neon-btn">
             🔗 Voir
           </a>
-          <a *ngIf="p.code" [href]="p.code" target="_blank" class="btn neon-btn-outline">
+          <a [href]="p.code || '#'" target="_blank" class="btn neon-btn-outline">
             🖥️ Code
           </a>
         </div>
