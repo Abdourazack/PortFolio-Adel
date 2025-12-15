@@ -1,7 +1,7 @@
 <section id="skills" class="neon-card p-5 my-5">
   <h2 class="neon-title mb-4">Compétences</h2>
 
-  <div *ngFor="let group of skillGroups" class="skill-group mb-4">
+  <div class="skill-group mb-4" *ngFor="let group of skillGroups">
     <h3 class="skill-group-title">{{ group.title }}</h3>
     <ul class="skill-list">
       <li *ngFor="let skill of group.skills">{{ skill }}</li>

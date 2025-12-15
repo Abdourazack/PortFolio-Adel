@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-skills',
   imports: [CommonModule],
   templateUrl: './skills.html',
-  styleUrl: './skills.scss',
+  styleUrls: ['./skills.scss'],
 })
 export class Skills {
 
@@ -17,7 +17,9 @@ export class Skills {
         'JavaScript (ES6+)',
         'TypeScript',
         'Angular',
-        'React (en cours d’apprentissage)'
+        'React (en cours d’apprentissage)',
+        'Next.js (projet Trusticket Demo)',
+        'Animations avec Framer Motion'
       ]
     },
     {
@@ -27,7 +29,8 @@ export class Skills {
         'Express.js',
         'NestJS',
         'API REST',
-        'Architecture MVC'
+        'Architecture MVC',
+        'Context API React (gestion du panier côté client pour la démo)'
       ]
     },
     {
@@ -43,7 +46,8 @@ export class Skills {
       skills: [
         'Git / GitHub',
         'Docker',
-        'Environnements virtualisés'
+        'Netlify (déploiement Next.js)',
+        'LocalStorage pour sauvegarde côté client'
       ]
     },
     {
@@ -51,9 +55,9 @@ export class Skills {
       skills: [
         'Méthodologie Agile',
         'Travail en équipe',
-        'Gestion de projet'
+        'Gestion de projet',
+        'Évolution et apprentissage continu (projets personnels et démos)'
       ]
     }
   ];
 }
-
