@@ -1,4 +1,4 @@
-import { CommonModule} from "@angular/common";
+import { CommonModule } from "@angular/common";
 import { Component } from "@angular/core";
 
 interface Project {
@@ -27,13 +27,18 @@ export class Projects {
     },
     {
       title: 'API REST - Gestion des Articles',
-      description: `API REST complète pour la gestion des articles, construite avec une architecture MVC moderne.
-Cette API permet de créer, lire, mettre à jour et supprimer des articles, avec une interface dynamique EJS pour la visualisation côté serveur.
-La base de données MySQL assure une gestion fiable des données, et l’application est déployée en production sur Alwaysdata.`,
-      technologies: ['Express.js', 'Node.js', 'MySQL', 'EJS', 'MVC'],
-      code: 'https://github.com/Abdourazack/gestion-article-mvc.git',
-      link: 'https://gestionarticle.alwaysdata.net/'
-    },
+      description: `API REST complète dédiée à la gestion des articles, développée selon une architecture MVC moderne et structurée.
+
+L’application permet de créer, lire, mettre à jour et supprimer des articles (CRUD), avec un rendu dynamique côté serveur grâce à EJS.
+
+La persistance des données est assurée par une base de données MySQL compatible hébergée sur TiDB Cloud (service externe managé), garantissant scalabilité et haute disponibilité.
+
+L’API est déployée en production sur Render, assurant un hébergement cloud moderne et une intégration continue avec GitHub.`,
+      technologies: ['Node.js', 'Express.js', 'EJS', 'MySQL (TiDB Cloud)', 'Architecture MVC', 'Render'],
+      code: 'https://github.com/Abdourazack/Gestion-des-articles',
+      link: 'https://gestion-des-articles.onrender.com/'
+    }
+    ,
     {
       title: 'Site Vitrine - Bistrot de Quartier',
       description: `Site vitrine simple pour un bistrot de quartier, réalisé dans le cadre de la première année en HTML et CSS. 
