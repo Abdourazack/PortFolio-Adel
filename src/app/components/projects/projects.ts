@@ -65,7 +65,7 @@ Déploiement sur Netlify.`,
       link: 'https://trusticket-demo.netlify.app/'
     },
 
-    // ✅ NOUVEAU PROJET AJOUTÉ
+
     {
       title: 'AnimeWorld - Catalogue & Bibliothèque d’Animes',
       description: `Application web moderne permettant d'explorer un catalogue d'animes via API publique.
