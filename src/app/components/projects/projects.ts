@@ -90,7 +90,7 @@ Le projet est déployé en production sur Netlify avec build Vite.`,
         'Responsive Design'
       ],
       code: 'https://github.com/Abdourazack/AnimeWorld-main-main',
-      link: 'https://animeworld.netlify.app/' // ⚠️ remplace par ton vrai lien Netlify si différent
+      link: 'https://amine-world.netlify.app/' // 
     }
   ];
 }
