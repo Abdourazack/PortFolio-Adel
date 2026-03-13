@@ -1,0 +1,88 @@
+.neon-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border: 2px solid rgba(13, 202, 240, 0.85);
+  border-radius: 14px;
+  padding: 2.2rem;
+  box-shadow: 0 0 18px rgba(13, 202, 240, 0.6),
+              inset 0 0 12px rgba(13, 202, 240, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 28px rgba(13, 202, 240, 0.9),
+                0 0 55px rgba(13, 202, 240, 0.6),
+                inset 0 0 18px rgba(13, 202, 240, 0.2);
+  }
+}
+
+.neon-title {
+  font-size: 2.1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #0dcaf0;
+  margin-bottom: 1.8rem;
+  text-shadow: 0 0 10px #0dcaf0, 0 0 20px rgba(13, 202, 240, 0.9), 0 0 35px rgba(13, 202, 240, 0.7);
+}
+
+.skill-group {
+  margin-bottom: 2rem;
+}
+
+.skill-group-title {
+  display: inline-block;
+  margin-bottom: 0.9rem;
+  padding: 0.35rem 1rem;
+  font-size: 1.45rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #0dcaf0;
+  background: rgba(13, 202, 240, 0.12);
+  border-left: 5px solid #0dcaf0;
+  border-radius: 6px;
+  text-shadow: 0 0 8px rgba(13, 202, 240, 0.9), 0 0 16px rgba(13, 202, 240, 0.6);
+}
+
+.skill-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+
+  li {
+    position: relative;
+    padding: 0.5rem 0 0.5rem 1.4rem;
+    font-size: 1.05rem;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+    color: #e5e7eb;
+    line-height: 1.6;
+
+    &::before {
+      content: '▹';
+      position: absolute;
+      left: 0;
+      color: #0dcaf0;
+      font-weight: bold;
+      text-shadow: 0 0 6px rgba(13, 202, 240, 0.8);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .neon-card {
+    padding: 1.6rem;
+  }
+
+  .neon-title {
+    font-size: 1.6rem;
+  }
+
+  .skill-group-title {
+    font-size: 1.15rem;
+    padding: 0.3rem 0.8rem;
+  }
+
+  .skill-list li {
+    font-size: 0.95rem;
+  }
+}
